@@ -32,7 +32,7 @@ public class Criba {
         int i, j;
         for (i = 2; i < Math.sqrt(esPrimo.length) + 1; i++) {
             if (esPrimo[i]) {
-                for (j = 2 * i; j < esPrimo.length.; j += i)
+                for (j = 2 * i; j < esPrimo.length; j += i)
                     esPrimo[j] = false;
             }
         }
