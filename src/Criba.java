@@ -4,6 +4,7 @@ public class Criba {
 
     private static boolean[] esPrimo;
     private static int dim;
+    private static int primos[];
 
     public static int[] generarPrimos(int max) {
         int i, j;
@@ -11,23 +12,28 @@ public class Criba {
 
             iniciarArray(dim);
             realizarCriba();
+            rellenarPrimos();
 
-// ¿Cuántos primos hay?
-            int cuenta = 0;
-            for (i = 0; i < dim; i++) {
-                if (esPrimo[i])
-                    cuenta++;
-            }
-// Rellenar el vector de números primos
-            int[] primos = new int[cuenta];
-            for (i = 0, j = 0; i < dim; i++) {
-                if (esPrimo[i])
-                    primos[j++] = i;
-            }
             return primos;
         } else { // max < 2
             return new int[0];
-// Vector vacío
+
+        }
+    }
+
+    private static void rellenarPrimos() {
+        int j;
+        int i;
+        int cuenta = 0;
+        for (i = 0; i < dim; i++) {
+            if (esPrimo[i])
+                cuenta++;
+        }
+
+        int[] primos = new int[cuenta];
+        for (i = 0, j = 0; i < dim; i++) {
+            if (esPrimo[i])
+                primos[j++] = i;
         }
     }
 
