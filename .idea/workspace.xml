@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e4ceabd-c9cb-4fbe-b949-329fec04a07a" name="Changes" comment="Commit 2- extraemos el metodo &quot;realizarCriba&quot;,">
+    <list default="true" id="4e4ceabd-c9cb-4fbe-b949-329fec04a07a" name="Changes" comment="Commit 3- extraemos el metodo &quot;rellenarPrimos&quot;, a aparte creamos la variable fuera de metodo &quot;primos&quot;, para que el metodo &quot;generarPrimos&quot; pueda return un array de enteros.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Criba.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Criba.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,6 +37,20 @@
     "extract.method.default.visibility": "private"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Criba" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Criba" />
+      <module name="Tarea_Tema4" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Criba" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -66,7 +81,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677172938402</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Commit 3- extraemos el metodo &quot;rellenarPrimos&quot;, a aparte creamos la variable fuera de metodo &quot;primos&quot;, para que el metodo &quot;generarPrimos&quot; pueda return un array de enteros.">
+      <created>1677173185699</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1677173185699</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -84,6 +106,7 @@
     <MESSAGE value="Commit 1" />
     <MESSAGE value="Commit 1- extraemos el metodo&quot;iniciarArray&quot; y arreglamos el codigo con las variables, y tambien extraemos las variables necesarias fuera del metodo" />
     <MESSAGE value="Commit 2- extraemos el metodo &quot;realizarCriba&quot;," />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit 2- extraemos el metodo &quot;realizarCriba&quot;," />
+    <MESSAGE value="Commit 3- extraemos el metodo &quot;rellenarPrimos&quot;, a aparte creamos la variable fuera de metodo &quot;primos&quot;, para que el metodo &quot;generarPrimos&quot; pueda return un array de enteros." />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit 3- extraemos el metodo &quot;rellenarPrimos&quot;, a aparte creamos la variable fuera de metodo &quot;primos&quot;, para que el metodo &quot;generarPrimos&quot; pueda return un array de enteros." />
   </component>
 </project>

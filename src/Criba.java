@@ -7,19 +7,16 @@ public class Criba {
     private static int primos[];
 
     public static int[] generarPrimos(int max) {
-        int i, j;
         if (max >= 2) {
-
-            iniciarArray(dim);
+            iniciarArray(max);
             realizarCriba();
             rellenarPrimos();
-
             return primos;
-        } else { // max < 2
+        } else {
             return new int[0];
-
         }
     }
+
 
     private static void rellenarPrimos() {
         int j;
