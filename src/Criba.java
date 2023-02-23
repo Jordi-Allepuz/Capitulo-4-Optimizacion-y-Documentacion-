@@ -18,22 +18,6 @@ public class Criba {
     }
 
 
-    private static void rellenarPrimos() {
-        int j;
-        int i;
-        int cuenta = 0;
-        for (i = 0; i < dim; i++) {
-            if (esPrimo[i])
-                cuenta++;
-        }
-
-        int[] primos = new int[cuenta];
-        for (i = 0, j = 0; i < dim; i++) {
-            if (esPrimo[i])
-                primos[j++] = i;
-        }
-    }
-
     private static void iniciarArray(int max) {
         int dim = max + 1;
         esPrimo = new boolean[dim] ;
@@ -43,6 +27,7 @@ public class Criba {
 
         esPrimo[0] = esPrimo[1] = false;
     }
+
 
     private static void realizarCriba() {
         int i, j;
@@ -54,6 +39,24 @@ public class Criba {
             }
         }
     }
+
+
+    private static void rellenarPrimos() {
+        int j;
+        int i;
+        int cuenta = 0;
+        for (i = 0; i < dim; i++) {
+            if (esPrimo[i])
+                cuenta++;
+        }
+
+        primos = new int[cuenta];
+        for (i = 0, j = 0; i < dim; i++) {
+            if (esPrimo[i])
+                primos[j++] = i;
+        }
+    }
+
 
 
 
