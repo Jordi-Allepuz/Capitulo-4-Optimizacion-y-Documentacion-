@@ -4,20 +4,14 @@ public class Criba {
 
     private static boolean[] esPrimo;
     private static int dim;
-    // Generar números primos de 1 a max
+
     public static int[] generarPrimos(int max) {
         int i, j;
         if (max >= 2) {
 
             iniciarArray(dim);
-// Criba
-            for (i = 2; i < Math.sqrt(dim) + 1; i++) {
-                if (esPrimo[i]) {
-// Eliminar los múltiplos de i
-                    for (j = 2 * i; j < dim; j += i)
-                        esPrimo[j] = false;
-                }
-            }
+            realizarCriba();
+
 // ¿Cuántos primos hay?
             int cuenta = 0;
             for (i = 0; i < dim; i++) {
@@ -46,6 +40,18 @@ public class Criba {
 
         esPrimo[0] = esPrimo[1] = false;
     }
+
+    private static void realizarCriba() {
+        int i, j;
+        for (i = 2; i < Math.sqrt(dim) + 1; i++) {
+            if (esPrimo[i]) {
+
+                for (j = 2 * i; j < dim; j += i)
+                    esPrimo[j] = false;
+            }
+        }
+    }
+
 
 
     public static void main(String[] args) {
