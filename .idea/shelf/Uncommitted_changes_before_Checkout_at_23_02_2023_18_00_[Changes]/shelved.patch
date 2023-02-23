@@ -1,0 +1,139 @@
+Index: src/Criba.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Criba.java b/src/Criba.java
+--- a/src/Criba.java	
++++ b/src/Criba.java	
+@@ -2,13 +2,14 @@
+ public class Criba {
+ 
+     // Generar números primos de 1 a max
+-    boolean[] esPrimo;
++    boolean[] esPrimo=new boolean[0];
++    int max;
+     public static int[] generarPrimos (int max) {
+         int i,j;
+-        int dim = max + 1;
++
+         if (max >= 2) {
+-            iniciarArray(dim);
+-            realizarCriba(dim);
++            iniciarArray(max);
++            realizarCriba(max);
+             return añadirPrimos();
+ 
+         } else { // max < 2
+@@ -21,13 +22,13 @@
+         int i;
+         int j;
+         int cuenta = 0;
+-        for (i=0; i<dim; i++) {
++        for (i=0; i<max+1; i++) {
+             if (esPrimo[i])
+                 cuenta++;
+         }
+ 
+         int[] primos = new int[cuenta];
+-        for (i=0, j=0; i<dim; i++) {
++        for (i=0, j=0; i<max+1; i++) {
+             if (esPrimo[i])
+                 primos[j++] = i;
+         }
+@@ -48,10 +49,10 @@
+         }
+     }
+ 
+-    private static boolean[] iniciarArray(int dim) {
+-        boolean[] esPrimo = new boolean[dim];
++    private static boolean[] iniciarArray(int max) {
++        boolean[] esPrimo = new boolean[max+1];
+ 
+-        for (int i=0; i< dim; i++)
++        for (int i=0; i< max+1; i++)
+             esPrimo[i] = true;
+         return esPrimo;
+     }
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -1,7 +1,10 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="4e4ceabd-c9cb-4fbe-b949-329fec04a07a" name="Changes" comment="Commit 1" />
++    <list default="true" id="4e4ceabd-c9cb-4fbe-b949-329fec04a07a" name="Changes" comment="Commit 3- extraemos el metodo &quot;añadirPrimos&quot;">
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Criba.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Criba.java" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -21,6 +24,9 @@
+       </map>
+     </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++  </component>
++  <component name="HighlightingSettingsPerFile">
++    <setting file="file://$PROJECT_DIR$/src/Criba.java" root0="FORCE_HIGHLIGHTING" />
+   </component>
+   <component name="MarkdownSettingsMigration">
+     <option name="stateVersion" value="1" />
+@@ -34,7 +40,8 @@
+   <component name="PropertiesComponent"><![CDATA[{
+   "keyToString": {
+     "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true"
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "extract.method.default.visibility": "private"
+   }
+ }]]></component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+@@ -67,7 +74,28 @@
+       <option name="project" value="LOCAL" />
+       <updated>1675969777883</updated>
+     </task>
+-    <option name="localTasksCounter" value="4" />
++    <task id="LOCAL-00004" summary="Commit 1- extraemos el metodo &quot;iniciarArray&quot;, eliminamos los comentarios relacionados con este metodo, y arreglamos un poco el metodo para que quede mas legible">
++      <created>1677170241284</created>
++      <option name="number" value="00004" />
++      <option name="presentableId" value="LOCAL-00004" />
++      <option name="project" value="LOCAL" />
++      <updated>1677170241284</updated>
++    </task>
++    <task id="LOCAL-00005" summary="Commit 2- Extraemos el metodo realizarCriba, borramos comentarios sobrantes, y modificamos un poco para sea mas legible. &#10;&#10;Ademas extraemos algunas variables como &quot;esPrimo&quot; o &quot;dim&quot;">
++      <created>1677170865989</created>
++      <option name="number" value="00005" />
++      <option name="presentableId" value="LOCAL-00005" />
++      <option name="project" value="LOCAL" />
++      <updated>1677170865989</updated>
++    </task>
++    <task id="LOCAL-00006" summary="Commit 3- extraemos el metodo &quot;añadirPrimos&quot;">
++      <created>1677171113910</created>
++      <option name="number" value="00006" />
++      <option name="presentableId" value="LOCAL-00006" />
++      <option name="project" value="LOCAL" />
++      <updated>1677171113910</updated>
++    </task>
++    <option name="localTasksCounter" value="7" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+@@ -83,6 +111,9 @@
+   </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="Commit 1" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Commit 1" />
++    <MESSAGE value="Commit 1- extraemos el metodo &quot;iniciarArray&quot;, eliminamos los comentarios relacionados con este metodo, y arreglamos un poco el metodo para que quede mas legible" />
++    <MESSAGE value="Commit 2- Extraemos el metodo realizarCriba, borramos comentarios sobrantes, y modificamos un poco para sea mas legible. &#10;&#10;Ademas extraemos algunas variables como &quot;esPrimo&quot; o &quot;dim&quot;" />
++    <MESSAGE value="Commit 3- extraemos el metodo &quot;añadirPrimos&quot;" />
++    <option name="LAST_COMMIT_MESSAGE" value="Commit 3- extraemos el metodo &quot;añadirPrimos&quot;" />
+   </component>
+ </project>
+\ No newline at end of file
