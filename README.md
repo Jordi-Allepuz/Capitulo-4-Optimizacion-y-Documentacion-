@@ -1,2 +1,2 @@
-# capitulo4
-Repositorio de prueba para el capitulo 4
+# Capitulo4 "Optimizacion y Documentacion"
+Repositorio para la tarea del Capitulo 4
