@@ -42,20 +42,22 @@ public class Criba {
     private static void rellenarPrimos() {
         int j;
         int i;
-        int cuenta = 0;
-        for (i = 0; i < esPrimo.length; i++) {
-            if (esPrimo[i])
-                cuenta++;
-        }
-
-        primos = new int[cuenta];
+        primos = new int[contarPrimos()];
         for (i = 0, j = 0; i < esPrimo.length; i++) {
             if (esPrimo[i])
                 primos[j++] = i;
         }
     }
 
-
+    private static int contarPrimos() {
+        int i;
+        int cuenta = 0;
+        for (i = 0; i < esPrimo.length; i++) {
+            if (esPrimo[i])
+                cuenta++;
+        }
+        return cuenta;
+    }
 
 
     public static void main(String[] args) {
