@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class Criba {
 
     private static boolean[] esPrimo;
-    private static int dim;
     private static int primos[];
 
     public static int[] generarPrimos(int max) {
@@ -19,10 +18,10 @@ public class Criba {
 
 
     private static void iniciarArray(int max) {
-        int dim = max + 1;
-        esPrimo = new boolean[dim] ;
+
+        esPrimo = new boolean[max+1] ;
         int i;
-        for (i = 0; i < dim; i++)
+        for (i = 0; i < esPrimo.length; i++)
             esPrimo[i] = true;
 
         esPrimo[0] = esPrimo[1] = false;
@@ -31,10 +30,9 @@ public class Criba {
 
     private static void realizarCriba() {
         int i, j;
-        for (i = 2; i < Math.sqrt(dim) + 1; i++) {
+        for (i = 2; i < Math.sqrt(esPrimo.length) + 1; i++) {
             if (esPrimo[i]) {
-
-                for (j = 2 * i; j < dim; j += i)
+                for (j = 2 * i; j < esPrimo.length.; j += i)
                     esPrimo[j] = false;
             }
         }
@@ -45,13 +43,13 @@ public class Criba {
         int j;
         int i;
         int cuenta = 0;
-        for (i = 0; i < dim; i++) {
+        for (i = 0; i < esPrimo.length; i++) {
             if (esPrimo[i])
                 cuenta++;
         }
 
         primos = new int[cuenta];
-        for (i = 0, j = 0; i < dim; i++) {
+        for (i = 0, j = 0; i < esPrimo.length; i++) {
             if (esPrimo[i])
                 primos[j++] = i;
         }
