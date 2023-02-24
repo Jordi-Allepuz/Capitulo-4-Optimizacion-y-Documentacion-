@@ -17,7 +17,7 @@ public class Criba {
     }
 
 
-    private static void iniciarArray(int max) {
+    public static void iniciarArray(int max) {
 
         esPrimo = new boolean[max+1] ;
         int i;
@@ -28,7 +28,7 @@ public class Criba {
     }
 
 
-    private static void realizarCriba() {
+    public static void realizarCriba() {
         int i, j;
         for (i = 2; i < Math.sqrt(esPrimo.length) + 1; i++) {
             if (esPrimo[i]) {
@@ -39,7 +39,7 @@ public class Criba {
     }
 
 
-    private static void rellenarPrimos() {
+    public static void rellenarPrimos() {
         int j;
         int i;
         primos = new int[contarPrimos()];
@@ -49,7 +49,7 @@ public class Criba {
         }
     }
 
-    private static int contarPrimos() {
+    public static int contarPrimos() {
         int i;
         int cuenta = 0;
         for (i = 0; i < esPrimo.length; i++) {

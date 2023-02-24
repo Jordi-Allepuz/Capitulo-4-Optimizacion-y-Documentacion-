@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e4ceabd-c9cb-4fbe-b949-329fec04a07a" name="Changes" comment="Commit 7">
+    <list default="true" id="4e4ceabd-c9cb-4fbe-b949-329fec04a07a" name="Changes" comment="Commit 8- Extraemos el metodo &quot;contarPrimos&quot;  asi simplificamos al mismo tiempo el metodo &quot;rellenarPrimos&quot;.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Criba.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Criba.java" afterDir="false" />
     </list>
@@ -30,13 +30,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "extract.method.default.visibility": "private"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;extract.method.default.visibility&quot;: &quot;private&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Criba" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Criba" />
@@ -123,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677174964504</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Commit 8- Extraemos el metodo &quot;contarPrimos&quot;  asi simplificamos al mismo tiempo el metodo &quot;rellenarPrimos&quot;.">
+      <created>1677176674960</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1677176674960</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -146,6 +153,7 @@
     <MESSAGE value="Commit 5" />
     <MESSAGE value="Commit 6- eliminamos la variable &quot;dim&quot; ya que es equivalente a max+1 y tambien podemos utilizar &quot;esPrimo.length&quot;" />
     <MESSAGE value="Commit 7" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit 7" />
+    <MESSAGE value="Commit 8- Extraemos el metodo &quot;contarPrimos&quot;  asi simplificamos al mismo tiempo el metodo &quot;rellenarPrimos&quot;." />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit 8- Extraemos el metodo &quot;contarPrimos&quot;  asi simplificamos al mismo tiempo el metodo &quot;rellenarPrimos&quot;." />
   </component>
 </project>
