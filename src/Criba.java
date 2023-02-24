@@ -3,7 +3,6 @@ import java.util.Scanner;
 /**
  * Clase que realiza una Criba de Erastótenes para generar los numeros primos
  * desde 2 hasta el numero indicado por el usuario.
- *
  * Explicacion: Se forma una tabla con todos los números naturales comprendidos entre 2 y max.
  * Se tachan los números que no son primos de la siguiente manera, Comenzando por el 2, se tachan todos sus múltiplos;
  * comenzando de nuevo,cuando se encuentra un número entero que no ha sido tachado, ese número es declarado primo,
@@ -40,7 +39,7 @@ public class Criba {
     /**
      * Funcion que inicia un array de booleanos de largo, el numero indicado por el usuario (max). Poniendo todos las
      * posiciones a true excepto el 0 y 1 que serán false, ya que no los tendremos en cuenta.
-     * @param max
+     * @param max parametro que debe introducir el usuario, el metodo calculara los primos hasta ese parametro.
      */
 
     public static void iniciarArray(int max) {
