@@ -1,10 +1,17 @@
 import java.util.Scanner;
 
 /**
- * Clase que realiza una Criba de Euclides para generar los numeros primos
+ * Clase que realiza una Criba de Erastótenes para generar los numeros primos
  * desde 2 hasta el numero indicado por el usuario.
+ *
+ * Explicacion: Se forma una tabla con todos los números naturales comprendidos entre 2 y max.
+ * Se tachan los números que no son primos de la siguiente manera, Comenzando por el 2, se tachan todos sus múltiplos;
+ * comenzando de nuevo,cuando se encuentra un número entero que no ha sido tachado, ese número es declarado primo,
+ * y se procede a tachar todos sus múltiplos, así sucesivamente.
+ * El proceso termina cuando el cuadrado del siguiente número confirmado como primo es mayor que max.
+ *
  * @author Jordi Allepuz
- * @version 1.0.0
+ * @version 2.0.0  Febrero 2023
  */
 
 public class Criba {
@@ -33,7 +40,7 @@ public class Criba {
 
     /**
      * Funcion que inicia un array de booleanos de largo, el numero indicado por el usuario (max). Poniendo todos las
-     * posiciones a true excepto el 0 y 1, que no los tendremos en cuenta.
+     * posiciones a true excepto el 0 y 1 que serán false, ya que no los tendremos en cuenta.
      * @param max
      */
 
@@ -49,7 +56,7 @@ public class Criba {
 
 
     /**
-     * Funcion que realiza la Criba de Euclides, y cambia a false los numeros que no son primos. Como resultado
+     * Funcion que realiza la Criba de Erastótenes, y cambia a false los numeros que no son primos. Como resultado
      * tendremos el array esPrimos, con las posiciones que son Primos a true y las que no a False.
      *
      */
@@ -99,8 +106,6 @@ public class Criba {
                 primos[j++] = i;
         }
     }
-
-
 
 
 

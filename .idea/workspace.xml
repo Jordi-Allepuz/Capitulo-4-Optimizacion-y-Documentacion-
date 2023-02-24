@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e4ceabd-c9cb-4fbe-b949-329fec04a07a" name="Changes" comment="Commit 9 cambiamos los metodos creados anteriormente de &quot;private&quot;  a &quot;public&quot; para poder comentar el codigo y general el JDoc.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="4e4ceabd-c9cb-4fbe-b949-329fec04a07a" name="Changes" comment="Commit 1- Comentando el codigo">
       <change beforePath="$PROJECT_DIR$/src/Criba.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Criba.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -137,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677252146801</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Commit 1- Comentando el codigo">
+      <created>1677254021043</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1677254021043</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -162,6 +168,7 @@
     <MESSAGE value="Commit 7" />
     <MESSAGE value="Commit 8- Extraemos el metodo &quot;contarPrimos&quot;  asi simplificamos al mismo tiempo el metodo &quot;rellenarPrimos&quot;." />
     <MESSAGE value="Commit 9 cambiamos los metodos creados anteriormente de &quot;private&quot;  a &quot;public&quot; para poder comentar el codigo y general el JDoc." />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit 9 cambiamos los metodos creados anteriormente de &quot;private&quot;  a &quot;public&quot; para poder comentar el codigo y general el JDoc." />
+    <MESSAGE value="Commit 1- Comentando el codigo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit 1- Comentando el codigo" />
   </component>
 </project>
