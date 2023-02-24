@@ -20,7 +20,6 @@ public class Criba {
     private static int primos[];
 
     /**
-     *
      * @param max parametro que debe introducir el usuario, el metodo calculara los primos hasta ese parametro.
      * @return metodo principal que devuelve un array con los primos si el numero introducio es mayor que 2 y si es
      * menor, devuelve un array vacio.
@@ -58,7 +57,6 @@ public class Criba {
     /**
      * Funcion que realiza la Criba de Erastótenes, y cambia a false los numeros que no son primos. Como resultado
      * tendremos el array esPrimos, con las posiciones que son Primos a true y las que no a False.
-     *
      */
 
     public static void realizarCriba() {
@@ -94,7 +92,6 @@ public class Criba {
      * Funcion que crea otro array, de longitud n, donde n es el numero que nos devuelve "contarPrimos".
      * Recorre el array esPrimos, en busca de los TRUE y si es correcto, añade el numero correspondiente a esa posicion
      * al nuevo array. Creando asi, una lista de numeros los cuales son Primos.
-     *
      */
 
     public static void rellenarPrimos() {
