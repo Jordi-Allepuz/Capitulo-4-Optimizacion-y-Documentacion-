@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e4ceabd-c9cb-4fbe-b949-329fec04a07a" name="Changes" comment="Commit 8- Extraemos el metodo &quot;contarPrimos&quot;  asi simplificamos al mismo tiempo el metodo &quot;rellenarPrimos&quot;.">
+    <list default="true" id="4e4ceabd-c9cb-4fbe-b949-329fec04a07a" name="Changes" comment="Commit 6- Comentando el codigo, generando JavaDoc">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Criba.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Criba.java" afterDir="false" />
     </list>
@@ -47,6 +47,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Criba" />
         <item itemvalue="Application.Criba" />
       </list>
     </recent_temporary>
