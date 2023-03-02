@@ -1,0 +1,29 @@
+Index: src/Criba.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Criba.java b/src/Criba.java
+--- a/src/Criba.java	
++++ b/src/Criba.java	
+@@ -103,6 +103,20 @@
+         }
+     }
+ 
++    public static void imprimirIniciales(int[] vector) {
++        for (int i = 0; i < vector.length; i++) {
++            if (i % 10 == 0) System.out.println();
++            System.out.print(i + 1 + "\t");
++        }
++    }
++
++    public static void imprimirPrimos(int[] vector) {
++        for (int i = 0; i < vector.length; i++) {
++            if (i % 10 == 0) System.out.println();
++            System.out.print(vector[i] + "\t");
++        }
++    }
++
+ 
+ 
+ 

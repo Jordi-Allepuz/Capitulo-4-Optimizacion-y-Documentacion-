@@ -103,6 +103,33 @@ public class Criba {
         }
     }
 
+    /**
+     * metodo para imprimir el array de numeros iniciales, solo muestra por pantalla los numeros del 0 hasta el numero
+     * que hemos pasado como parametro, recorre todo el vector de numeros enteros.
+     * @param vector, le pasamos el vector que hemos creado con el dato pasado por pantalla por el usuario
+     */
+
+    public static void imprimirIniciales(int[] vector) {
+        for (int i = 0; i < vector.length; i++) {
+            if (i % 10 == 0) System.out.println();
+            System.out.print(i + 1 + "\t");
+        }
+    }
+
+    /**
+     * metodo para imprimir el array de primos, generados por el metodo generarPrimos, se le pasa un vector como parametro
+     * el cual son los primos, desde 2 hasta el numero que ha indicado el usuario
+     * @param vector, le pasamos el vector que ha generado el metodo generarPrimos, el cual ha cambiado el vector inicial
+     * por solo los primos.
+     */
+
+    public static void imprimirPrimos(int[] vector) {
+        for (int i = 0; i < vector.length; i++) {
+            if (i % 10 == 0) System.out.println();
+            System.out.print(vector[i] + "\t");
+        }
+    }
+
 
 
 
@@ -112,16 +139,10 @@ public class Criba {
         int dato = teclado.nextInt();
         int vector[] = new int[dato];
         System.out.println("\nVector inicial hasta :" + dato);
-        for (int i = 0; i < vector.length; i++) {
-            if (i % 10 == 0) System.out.println();
-            System.out.print(i + 1 + "\t");
-        }
+        imprimirIniciales(vector);
         vector = generarPrimos(dato);
         System.out.println("\nVector de primos hasta:" + dato);
-        for (int i = 0; i < vector.length; i++) {
-            if (i % 10 == 0) System.out.println();
-            System.out.print(vector[i] + "\t");
-        }
+        imprimirPrimos(vector);
     }
 }
 
